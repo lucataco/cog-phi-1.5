@@ -1,0 +1,15 @@
+# Configuration for Cog
+build:
+  gpu: true
+  cuda: "11.8"
+  python_version: "3.10"
+  python_packages:
+    - "torch==2.0.0"
+    - "torchvision"
+    - "transformers"
+    - "diffusers"
+    - "accelerate"
+    - "einops"
+
+# predict.py defines how predictions are run on your model
+predict: "predict.py:Predictor"
